@@ -30,7 +30,7 @@ function crearciudad(data){
    console.log("eefdewfewfwe");
 
   $.post("/city/"+city, function(data, status){
-    console.log(JSON.stringify(data))
+    console.log(data)
     
     let city ={
       name : data.name,
