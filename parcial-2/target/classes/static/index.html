@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>Weather search</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="/webjars/jquery/jquery.min.js"></script>
+<script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/weather.js"></script>
+<script src="js/app.js"></script>
+<link rel="stylesheet"
+	href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+
+
+
+<style>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+</style>
+
+</head>
+<body>
+	<center>
+		<h1>Weather search</h1>
+		<hr />
+		<div class="topnav" style>
+			<input id='name' type="text" placeholder="City..">
+			<button type="submit" id='search' onclick="weather.obtenerClima()">Search</button>
+			<br> <br>
+			<table id="City weather">
+                <thead>
+                    <tr>
+                        <th>Ciudad</th>                        
+                        <th>tmp</th>
+                        <th>humedad</th>						
+                    </tr>
+                </thead>
+                <tbody id="tb1">
+
+                </tbody>
+            </table>           
+            
+
+		</div>
+    </center>    
+
+     
+      
+      <div id="map-canvas"></div>
+      
+     
+</body>
+
+	
+</html>
